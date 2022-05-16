@@ -1,0 +1,76 @@
+#wrap > #slides {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#wrap > #slides > .screen {
+  overflow: hidden;
+  position: relative;
+  width: 620px;
+  height: 460px;
+  margin: 0 auto;
+}
+
+#wrap > #slides > .screen > .slides-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  position: absolute;
+  top: 0;
+  left: -240px;
+  width: calc(240px * 5);
+  padding-top: 40px;
+}
+
+#wrap > #slides > .screen > .slides-container > li {
+  width: 240px;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+#wrap > #slides > .screen > .slides-container > li.on {
+  position: relative;
+  z-index: 100;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-left: -50px;
+}
+
+#wrap > #slides > .screen > .slides-container > li.on + li {
+  margin-left: -50px;
+}
+
+#wrap > #slides > .screen > .slides-container > li > a {
+  display: block;
+}
+
+#wrap > #slides > .screen > .slides-container > li > a > img {
+  display: block;
+  width: 100%;
+}
+
+#wrap > #slides > a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 38px;
+  height: 72px;
+  margin-top: -36px;
+  text-indent: -9999px;
+}
+
+#wrap > #slides > a.prev {
+  left: 0;
+  background-image: url(../images/prev.png);
+}
+
+#wrap > #slides > a.next {
+  right: 0;
+  background-image: url(../images/next.png);
+}
+/*# sourceMappingURL=style.css.map */
